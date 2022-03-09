@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
 /*
 
 A sequence of numbers is called an arithmetic progression if the difference between any two consecutive elements is the same.
