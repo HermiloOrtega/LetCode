@@ -81,7 +81,7 @@ namespace HashMapNamespace
         public void put(int key, int value)
         {
             int hash_key = key % this.key_space;
-            this.hash_table.Get(hash_key).update(key, value);
+            this.hash_table[hash_key].update(key, value);
         }
 
         /**
@@ -91,14 +91,14 @@ namespace HashMapNamespace
         public int get(int key)
         {
             int hash_key = key % this.key_space;
-            return this.hash_table.Get(hash_key).get(key);
+            return this.hash_table[hash_key].get(key);
         }
 
         /** Removes the mapping of the specified value key if this map contains a mapping for the key */
         public void remove(int key)
         {
             int hash_key = key % this.key_space;
-            this.hash_table.Get(hash_key).remove(key);
+            this.hash_table[hash_key].remove(key);
         }
     }
 
